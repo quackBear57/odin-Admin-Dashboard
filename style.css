@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
@@ -9,15 +10,75 @@ body {
 }
 
 .container > * {
-    padding: 15px
+    /* padding: 15px */
 }
 
 .sidebar {
     background-color: rgb(0, 140, 255);
     color: white;
+    font-weight: 700;
+}
+
+.container > .sidebar {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+
+.top > p {
+    margin: 0;
+}
+
+.sidebar .nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar .nav > * {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 0;
+    align-items: center;
+}
+
+.sidebar .bottomNav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar .bottomNav > * {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 0;
+    align-items: center;
+}
+
+.icon {
+    height: 20px;
 }
 
 .main {
     display: grid;
     grid-template-rows: 150px auto;
+}
+
+.main > .header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 20px;
+    /* align-items: center; */
+}
+
+.header > .search {
+    display: grid;
+    grid-template-columns: 20px auto;
+    gap: 20px;
+}
+
+.body {
+    background-color: rgb(197, 205, 224);
 }
